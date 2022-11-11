@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
+/* Design system styles */
+
+:root {
+  --very-dark-magenta: hsl(300, 43%, 22%);
+  --soft-pink: hsl(333, 80%, 67%);
+  --dark-grayish-magenta: hsl(303, 10%, 53%);
+  --light-grayish-magenta: hsl(300, 24%, 96%);
+}
+
+body {
+  background-color: #fff;
+  background-image: url(../images/bg-pattern-top-mobile.svg),
+    url(../images/bg-pattern-bottom-mobile.svg);
+  background-repeat: no-repeat;
+  background-position: top left, bottom center;
+  background-size: contain, contain;
+  font-family: 'League Spartan', 'sans-serif';
+  font-size: 1.0625rem;
+  font-weight: 400;
+  color: var(--dark-grayish-magenta);
+  display: grid;
+  place-items: center;
+  padding: clamp(5.125rem, 3.38vw + 4.33rem, 7.375rem) 1.5rem 5rem 1.5rem;
+  min-height: 100vh;
+  position: relative;
+}
+
+.main {
+  justify-content: flex-start;
+  gap: clamp(3.0625rem, 2.07vw + 2.58rem, 4.4375rem);
+}
+
+.description-and-ratings {
+  gap: 39px;
+}
+
+.description {
+  text-align: center;
+  width: clamp(20.4375rem, 30.03vw + 13.4rem, 27.8125rem);
+}
+
+.description h1 {
+  font-weight: 700;
+  font-size: clamp(2.5rem, 1.5vw + 2.15rem, 3.5rem);
+  line-height: clamp(2rem, 1.5vw + 1.65rem, 3rem);
+  letter-spacing: calc(-1 * clamp(0.0894rem, 0.06vw + 0.07rem, 0.125rem));
+  color: var(--very-dark-magenta);
+}
+
+.description p {
+  margin-top: 1rem;
+  font-size: 1.1875rem;
+  line-height: 1.5625rem;
+  letter-spacing: -0.0396rem;
+}
+
+.ratings {
+  list-style-type: none;
+  gap: 1rem;
+  width: clamp(20.4375rem, 30.03vw + 13.4rem, 27.8125rem);
+}
+
+.rating-article {
+  background-color: var(--light-grayish-magenta);
+  gap: 1rem 2rem;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+}
+
+.stars {
+  flex-direction: row;
+  width: 7.3125rem;
+  justify-content: space-between;
+}
+
+.rating-article p {
+  font-weight: 700;
+  line-height: 1rem;
+  width: 13.5625rem;
+  color: var(--very-dark-magenta);
+}
+
+.reviews {
+  gap: 1rem;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.review-article {
+  background-color: var(--very-dark-magenta);
+  align-items: flex-start;
+  padding: 2.5rem 2rem 2.1875rem 2rem;
+  gap: 1.4375rem;
+  border-radius: 0.5rem;
+  width: clamp(327px, 30.03vw + 13.4rem, 445px);
+}
+
+.photo-and-name {
+  display: flex;
+  flex-direction: row;
+  gap: 23px;
+}
+
+.profile-photo {
+  width: 40px;
+  border-radius: 50%;
+}
+
+.name-and-verified {
+  gap: 0.25rem;
+  line-height: 1rem;
+}
+
+.name {
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.verified {
+  color: var(--soft-pink);
+}
+
+.review-text {
+  font-weight: 500;
+  line-height: 1.375rem;
+  letter-spacing: -0.019rem;
+  color: #ffffff;
+}
+
+.attribution {
+  font-family: 'Montserrat', 'sans-serif';
+  position: absolute;
+  padding: 10px;
+  bottom: 0px;
+  text-align: center;
+  background-color: var(--soft-blue);
+  color: var(--very-dark-blue-main-bg);
+}
+
+.attribution a,
+.attribution a:visited {
+  text-decoration: underline;
+  color: var(--very-dark-blue-main-bg);
+}
+
+.attribution a:hover {
+  font-weight: 500;
+}
+
+@media (min-width: 48rem) {
+  body {
+    background-image: url(../images/bg-pattern-top-desktop.svg),
+      url(../images/bg-pattern-bottom-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: top left, bottom right;
+    background-size: auto, auto;
+  }
+
+  .description-and-ratings {
+    flex-direction: row;
+    gap: clamp(39px, 12.8vw + -3.71rem, 125px);
+  }
+
+  .description {
+    text-align: left;
+    width: clamp(327px, 17.56vw + 12.01rem, 445px);
+  }
+
+  .ratings {
+    width: clamp(327px, 17.56vw + 12.01rem, 445px);
+  }
+
+  .reviews {
+    gap: clamp(1rem, 2.08vw, 1.875rem);
+  }
+
+  .review-article {
+    width: clamp(327px, 3.42vw + 18.79rem, 350px);
+  }
+
+  .review-text {
+    min-height: 5.5rem;
+  }
+}
+
+@media (min-width: 85.625rem) {
+  .ratings {
+    width: clamp(27.8125rem, 135.71vw + -88.39rem, 33.75rem);
+  }
+
+  .rating-1 {
+    align-self: flex-start;
+  }
+
+  .rating-2 {
+    align-self: center;
+  }
+
+  .rating-3 {
+    align-self: flex-end;
+  }
+
+  .reviews {
+    height: clamp(14.625rem, 45.71vw + -24.52rem, 16.625rem);
+  }
+
+  .review-1 {
+    align-self: flex-start;
+  }
+
+  .review-2 {
+    align-self: center;
+  }
+
+  .review-3 {
+    align-self: flex-end;
+  }
+}
