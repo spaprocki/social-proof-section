@@ -1,16 +1,30 @@
-# Frontend Mentor - Four card feature section solution
+# Frontend Mentor - Social proof section solution
 
-This is a solution to the [Four card feature section challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/four-card-feature-section-weK1eFYK). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+This is a solution to the [Social proof section challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/social-proof-section-6e0qTv_bA). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
 - [Overview](#overview)
+  - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
   - [Links](#links)
-- [Built with](#built-with)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
+  - [Useful resources](#useful-resources)
 - [Author](#author)
+- [Acknowledgments](#acknowledgments)
+
+**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
+
+### The challenge
+
+Users should be able to:
+
+- View the optimal layout for the section depending on their device's screen size
 
 ### Screenshot
 
@@ -19,15 +33,24 @@ This is a solution to the [Four card feature section challenge on Frontend Mento
 
 ### Links
 
-- Solution URL: [solution](https://github.com/spaprocki/four-card-feature-section)
-- Live Site URL: [live site](https://spaprocki-four-card.netlify.app/)
+- Solution URL: [github](https://github.com/spaprocki/social-proof-section)
+- Live Site URL: [netlify](https://spaprocki-social-proof-section.netlify.app/)
 
-## Built with
+## My process
+
+### Built with
 
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
+- CSS Grid
 - Mobile-first workflow
+- [px to rem](https://marketplace.visualstudio.com/items?itemName=sainoba.px-to-rem) - VSCode snippet
+
+### Useful resources
+
+- [A modern CSS Reset](https://piccalil.li/blog/a-modern-css-reset/) - This is a reset stylesheet I am planning to use in my following coding projects.
+- [Modern Fluid Typography Using CSS Clamp](https://www.smashingmagazine.com/2022/01/modern-fluid-typography-css-clamp/) - This is an amazing article which helped me finally implement CSS Clamp for fluid change of font-size between screen sizes, while mixing rem and vw to express font-size. I'd recommend it to anyone still learning this concept.
 
 ## Author
 
