@@ -103,10 +103,15 @@ body {
   width: clamp(327px, 30.03vw + 13.4rem, 445px);
 }
 
+.review-article blockquote {
+  order: 2;
+}
+
 .photo-and-name {
   display: flex;
   flex-direction: row;
   gap: 23px;
+  order: 1;
 }
 
 .profile-photo {
